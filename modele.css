@@ -1,0 +1,526 @@
+/*******************************************************************************
+ *
+ * Nom : modele.css
+ * Date et auteur : Estéban Carlier
+ *		Créé le 03/10/2023
+ *
+ * Description :
+ *		Fichier css du site CRCI pour les transitions, les couleurs et les animation afin que le site sois agréable 
+ *
+ *******************************************************************************/
+ @media(min-width:  1025px)
+ {
+
+ body{
+	font-family: Arial,Helvetica,sans-serif;
+	width: 100%;
+	padding: 0%;
+	margin: 0%;
+	
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.imagetaille{
+	width: 500px; 
+	height: 400px; 
+	float:right; 
+	margin-right: 400px;
+}
+
+header{
+	width :100% ;
+	padding: 125px;
+	margin: 0px;
+	/*background-color: rgb(4, 99, 129)	;*/
+	background-image: url("./image/roulotte format telephone.jpg");
+	background-size:cover;
+	color: rgb(255, 255, 255);
+	border-radius: 4px;
+	font-size: 40px;
+	text-align: center;
+}
+
+/* Conteneur pour flexbox */
+div.contenu {
+	width: 100%;
+}
+table{
+	table-layout: auto;
+	width: 100%;
+
+}
+th{	
+	border-radius: 6px;
+	margin: 25px;
+	padding: 25px;
+	color: black;
+}
+
+.backcolorred{
+	background-color: PowderBlue;
+}
+tr{
+	margin: 25px;
+	padding: 25px;
+}
+	
+
+article{
+	/*flex: 75%;*/
+	padding: 10px;
+	margin: 5px;
+	/*background-image: url("./image/logo.jpg");*/
+	background-repeat: no-repeat;
+	background-size:contain;	
+	border-radius: 4px;
+}
+
+footer{
+	margin: 5px;
+	padding: 20px;
+	background-color: #E0F0E0;
+	font-size: 15px;
+	text-align: center;
+}
+
+/* Responsive layout */
+
+h1{
+	font-size: 30px;
+}
+
+h2{
+	font-size: 23px;
+	font-style:oblique;
+	color: black;
+}
+h3{
+	width :100% ;
+	padding: 75px;
+	margin: 0px;
+	/*background-color: rgb(4, 99, 129)	;*/
+	background-image: url("./image/roulotte.png");
+	color: rgb(255, 255, 255);	
+	border-radius: 4px;
+	font-size: 40px;
+	text-align: center;
+}
+p{
+	font-size: 18px;
+}
+row {
+
+	display: flex;
+}
+titre3{
+	font-size: 20px;
+	font-weight: bold;
+}
+.colortextblack{
+	color: black;
+}
+th{
+	color: black;
+}
+
+divnav {
+	float :left ;
+	text-align: left;
+	overflow: hidden;
+	width: 4%;
+	background: rgb(41, 41, 41);
+	transition: width 0.3s;
+}
+divnav i {
+	color: rgb(255, 255, 255);
+	border-radius: 4px;
+	padding: 5px;
+}
+divnav a {
+	color: rgb(255, 255, 255);
+	display: flex;
+	overflow: hidden;
+	border-radius: 4px;
+	padding: 5px;
+	margin: 10px;
+	width: 100%;
+	text-decoration: none;
+  }
+  divnav.hidden-mob {	
+	visibility: none;
+  }
+a{
+	color: rgb(255, 255, 255);
+	overflow: hidden;
+	border-radius: 4px;
+	padding: 5px;
+	margin: 10px;
+	width: 100%;
+	text-decoration: none;
+}
+  .lineUp {
+	animation: 2s anim-lineUp ease-out;
+  }
+  @keyframes anim-lineUp {
+	0% {
+	  opacity: 0;
+	  transform: translateY(80%);
+	}
+	20% {
+	  opacity: 0;
+	}
+	50% {
+	  opacity: 1;
+	  transform: translateY(0%);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(0%);
+	}
+  }
+
+
+divnav a.clic{
+	display: flex;
+	overflow: hidden;
+	background-color: rgb(177, 0, 0);
+	color: white;
+	width: 75%;
+  }
+divnav:hover {
+  width: 15%;
+
+  display: flex;
+  flex-direction:column;
+}
+ }
+
+ /*Format tablette*/
+ @media (min-width: 768px) and (max-width: 1024px) {
+ body{
+	font-family: Arial,Helvetica,sans-serif;
+	width: 100%;
+	padding: 0%;
+	margin: 0%;
+	
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.imagetaille{
+	width: 500px; 
+	height: 400px; 
+	float:right; 
+	margin-right: 400px;
+}
+
+header{
+	width :100% ;
+	padding: 125px;
+	margin: 0px;
+	/*background-color: rgb(4, 99, 129)	;*/
+	background-image: url("./image/roulotte format telephone.jpg");
+	background-size:cover;
+	color: rgb(255, 255, 255);
+	border-radius: 4px;
+	font-size: 40px;
+	text-align: center;
+}
+
+/* Conteneur pour flexbox */
+div.contenu {
+	width: 100%;
+}
+table{
+	table-layout: auto;
+	width: 100%;
+
+}
+th{	
+	border-radius: 6px;
+	margin: 25px;
+	padding: 25px;
+	color: black;
+}
+
+.backcolorred{
+	background-color: PowderBlue;
+}
+tr{
+	margin: 25px;
+	padding: 25px;
+}
+	
+
+article{
+	/*flex: 75%;*/
+	padding: 10px;
+	margin: 5px;
+	/*background-image: url("./image/logo.jpg");*/
+	background-repeat: no-repeat;
+	background-size:contain;	
+	border-radius: 4px;
+}
+
+footer{
+	margin: 5px;
+	padding: 20px;
+	background-color: #E0F0E0;
+	font-size: 15px;
+	text-align: center;
+}
+
+/* Responsive layout */
+
+h1{
+	font-size: 30px;
+}
+
+h2{
+	font-size: 23px;
+	font-style:oblique;
+	color: black;
+}
+h3{
+	width :100% ;
+	padding: 75px;
+	margin: 0px;
+	/*background-color: rgb(4, 99, 129)	;*/
+	background-image: url("./image/roulotte.png");
+	color: rgb(255, 255, 255);	
+	border-radius: 4px;
+	font-size: 40px;
+	text-align: center;
+}
+p{
+	font-size: 18px;
+}
+row {
+
+	display: flex;
+}
+titre3{
+	font-size: 20px;
+	font-weight: bold;
+}
+.colortextblack{
+	color: black;
+}
+th{
+	color: black;
+}
+
+divnav {
+	float :left ;
+	text-align: left;
+	overflow: hidden;
+	width: 26%;
+	background: rgb(41, 41, 41);
+	transition: width 0.3s;
+}
+divnav i {
+	color: rgb(255, 255, 255);
+	border-radius: 4px;
+	padding: 5px;
+}
+divnav a {
+	color: rgb(255, 255, 255);
+	display: flex;
+	overflow: hidden;
+	border-radius: 4px;
+	padding: 5px;
+	margin: 10px;
+	width: 100%;
+	text-decoration: none;
+  }
+divnav.hidden-mob {	
+	visibility: none;
+  }
+divnav a.clic{
+	display: flex;
+	overflow: hidden;
+	background-color: rgb(177, 0, 0);
+	color: white;
+	width: 75%;
+  }
+/*divnav:hover {
+  width: 20%;
+
+  display: flex;
+  flex-direction:column;
+}*/
+a{
+	color: rgb(255, 255, 255);
+	overflow: hidden;
+	border-radius: 4px;
+	padding: 5px;
+	margin: 10px;
+	width: 100%;
+	text-decoration: none;
+}
+  .lineUp {
+	animation: 2s anim-lineUp ease-out;
+  }
+  @keyframes anim-lineUp {
+	0% {
+	  opacity: 0;
+	  transform: translateY(80%);
+	}
+	20% {
+	  opacity: 0;
+	}
+	50% {
+	  opacity: 1;
+	  transform: translateY(0%);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(0%);
+	}
+  }
+
+
+
+ }
+
+ /*Format Telephone*/
+@media(min-width: 200px) and (max-width: 768px)
+{
+
+	.imagetaille{
+	display: none;
+	}
+	.backcolorred{
+		background-color: PowderBlue;
+	}
+	.lineUp {
+		animation: 2s anim-lineUp ease-out;
+	  }
+	  @keyframes anim-lineUp {
+		0% {
+		  opacity: 0;
+		  transform: translateY(80%);
+		}
+		20% {
+		  opacity: 0;
+		}
+		50% {
+		  opacity: 1;
+		  transform: translateY(0%);
+		}
+		100% {
+		  opacity: 1;
+		  transform: translateY(0%);
+		}
+	  }
+
+	body{
+		font-family: Arial,Helvetica,sans-serif;
+		width: 100%;
+	}
+	
+	* {
+	  box-sizing: border-box;
+	}
+	
+	header{
+		width :95% ;
+		padding: 75px;
+		margin: 0px;
+		/*background-color: rgb(4, 99, 129)	;*/
+		background-image: url("./image/roulotte format telephone1.png");
+		color: rgb(255, 255, 255);	
+		border-radius: 4px;
+		font-size: 40px;
+		text-align: center;
+	}
+	
+	/* Conteneur pour flexbox */
+	div.contenu {
+		width: 80%;
+		
+	}
+	divnav {           
+		width :90% ;
+	   float :left ;
+	   background: rgb(53, 53, 53);
+	   padding: 20px;
+	   margin: 10px;
+   }
+   divnav a {
+		   color: rgb(255, 255, 255);
+	   border-radius: 4px;
+	   padding: 5px;
+	   margin: 10px;
+	   text-decoration: none;
+	   text-align: center;
+	 }
+   divnav a.clic{
+	   background-color: rgb(192, 29, 29);
+	   color: white;
+	   width: 50%;
+	 }
+
+
+	 /**/
+
+	 
+
+/* Conteneur pour flexbox */
+div.contenu {
+	display: flex;
+	width: 80%;
+	/*background-image: url("./image/logo.jpg");*/
+}
+
+
+
+footer{
+	margin: 5px;
+	padding: 20px;
+	background-color: #E0F0E0;
+	font-size: 15px;
+	text-align: center;
+}
+
+/* Responsive layout */
+
+h1{
+	font-size: 30px;
+}
+
+h2{
+	font-size: 23px;
+	font-style:oblique;
+	color: black;
+}
+h3{
+	width :100% ;
+	padding: 75px;
+	margin: 0px;
+	/*background-color: rgb(4, 99, 129)	;*/
+	background-image: url("./image/roulotte.png");
+	color: rgb(255, 255, 255);	
+	border-radius: 4px;
+	font-size: 40px;
+	text-align: center;
+}
+p{
+	font-size: 18px;
+}
+titre3{
+	font-size: 20px;
+	font-weight: bold;
+}
+.colortextblack{
+	color: black;
+}
+th{
+	color: black;
+}
+}
